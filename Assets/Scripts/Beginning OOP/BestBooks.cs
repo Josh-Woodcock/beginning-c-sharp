@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 struct BestBook
 {
@@ -11,25 +10,26 @@ struct BestBook
 }
 
 
-public class BestBooks : MonoBehaviour {
+public class BestBooks : MonoBehaviour
+{
 
     BestBook[] books;
 
-
-	// Use this for initialization
-	void Start () {
-
+    // Use this for initialization
+    void Start()
+    {
         books = new BestBook[3];
 
         BestBook hungerGames = new BestBook();
         hungerGames.Author = "Suzanne Collins";
-        hungerGames.Name = "The Hunger Ganes";
+        hungerGames.Name = "The Hunger Games";
         hungerGames.AvgRating = 4.35f;
-        hungerGames.Score = 2664643;
+        hungerGames.Score = 2173146;
 
         BestBook harryPotter = new BestBook();
         harryPotter.Author = "JK Rowling";
         harryPotter.Name = "Harry Potter and the Order of the Phoenix";
+<<<<<<< HEAD
         harryPotter.AvgRating = 4.45f;
         harryPotter.Score = 2173146;
 
@@ -38,13 +38,22 @@ public class BestBooks : MonoBehaviour {
         mockingbird.Name = "To Kill A Mockingbird";
         mockingbird.AvgRating = 4.25f;
         mockingbird.Score = 1797878;
+=======
+        harryPotter.AvgRating = 4.46f;
+        harryPotter.Score = 1797878;
+
+        BestBook mockingBird = new BestBook();
+        mockingBird.Author = "Harper Lee";
+        mockingBird.Name = "To Kill a Mockingbird";
+        mockingBird.AvgRating = 4.25f;
+        mockingBird.Score = 1797878;
+>>>>>>> bb1c07776bf1a3c895d0eb76aaa8cd3aaf94b609
 
         books[0] = hungerGames;
         books[1] = harryPotter;
-        books[2] = mockingbird;
+        books[2] = mockingBird;
+    }
 
-	}
-	
     void OnDisable()
     {
         foreach (BestBook book in books)
@@ -53,13 +62,13 @@ public class BestBooks : MonoBehaviour {
             Debug.Log(book.Author);
             Debug.Log(book.AvgRating);
             Debug.Log(book.Score);
-            Debug.Log("------");
+            Debug.Log("---");
         }
     }
 
+    // Update is called once per frame
+    void Update()
+    {
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
 }
