@@ -28,16 +28,16 @@ public class BestBooks : MonoBehaviour {
         hungerGames.Score = 2664643;
 
         BestBook harryPotter = new BestBook();
-        hungerGames.Author = "JK Rowling";
-        hungerGames.Name = "Harry Potter and the Order of the Phoenix";
-        hungerGames.AvgRating = 4.45f;
-        hungerGames.Score = 2173146;
+        harryPotter.Author = "JK Rowling";
+        harryPotter.Name = "Harry Potter and the Order of the Phoenix";
+        harryPotter.AvgRating = 4.45f;
+        harryPotter.Score = 2173146;
 
         BestBook mockingbird = new BestBook();
-        hungerGames.Author = "Harper Lee";
-        hungerGames.Name = "To Kill A Mockingbird";
-        hungerGames.AvgRating = 4.25f;
-        hungerGames.Score = 1797878;
+        mockingbird.Author = "Harper Lee";
+        mockingbird.Name = "To Kill A Mockingbird";
+        mockingbird.AvgRating = 4.25f;
+        mockingbird.Score = 1797878;
 
         books[0] = hungerGames;
         books[1] = harryPotter;
