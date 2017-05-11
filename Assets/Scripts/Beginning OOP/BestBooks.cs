@@ -29,16 +29,6 @@ public class BestBooks : MonoBehaviour
         BestBook harryPotter = new BestBook();
         harryPotter.Author = "JK Rowling";
         harryPotter.Name = "Harry Potter and the Order of the Phoenix";
-<<<<<<< HEAD
-        harryPotter.AvgRating = 4.45f;
-        harryPotter.Score = 2173146;
-
-        BestBook mockingbird = new BestBook();
-        mockingbird.Author = "Harper Lee";
-        mockingbird.Name = "To Kill A Mockingbird";
-        mockingbird.AvgRating = 4.25f;
-        mockingbird.Score = 1797878;
-=======
         harryPotter.AvgRating = 4.46f;
         harryPotter.Score = 1797878;
 
@@ -47,7 +37,6 @@ public class BestBooks : MonoBehaviour
         mockingBird.Name = "To Kill a Mockingbird";
         mockingBird.AvgRating = 4.25f;
         mockingBird.Score = 1797878;
->>>>>>> bb1c07776bf1a3c895d0eb76aaa8cd3aaf94b609
 
         books[0] = hungerGames;
         books[1] = harryPotter;
