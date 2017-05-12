@@ -21,7 +21,7 @@ public class MyMonster : MonoBehaviour {
         monster.SetHealth(monster.GetHealth()- damage);
         if (monster.GetHealth() <= 0)
         {
-            Debug.Log("The Moster is Dead");
+            Debug.Log("The Monster is Dead");
             Destroy(gameObject);
         }
         else
