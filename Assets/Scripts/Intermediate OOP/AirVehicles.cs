@@ -36,10 +36,6 @@ public class AirVehicles : MonoBehaviour
     void OnDisable()
     {
         HangGlider hangGlider = new HangGlider("Bob", 1, 92.5f);
-
-        foreach (HangGlider hangGlider in y) {
-
-        } 
     }
 
 }
