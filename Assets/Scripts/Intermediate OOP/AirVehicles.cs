@@ -11,7 +11,7 @@ public class Plane
     {
         this.name = name;
         this.passengerNumber = passengerNumber;
-        Debug.Log("Plane constructor");
+        Debug.Log("Name: " + name + " " + "Number of passengers: " + passengerNumber); 
     }
 }
 
@@ -24,7 +24,7 @@ public class HangGlider : Plane
     public HangGlider(string name, int passengerNumber, float pilotWeight) : base(name, passengerNumber)
     {
         this.pilotWeight = pilotWeight;
-        Debug.Log("HangGlider Constructor");
+        Debug.Log("Name: " + name + " " + "Number of passengers: " + passengerNumber + " " + "Pilot Weight: " + pilotWeight);
     }
 }
 
